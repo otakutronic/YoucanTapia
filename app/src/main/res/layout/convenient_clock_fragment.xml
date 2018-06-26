@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:clipToPadding="false"
+        android:layout_marginTop="150dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <com.mji.tapia.youcantapia.widget.CustomFontTextView
+                android:id="@+id/date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2018 年 4 月 4 日"
+                android:textSize="50sp"
+                android:gravity="center"
+                android:textColor="@color/colorDarkText"/>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical">
+                    <com.mji.tapia.youcantapia.widget.CustomFontTextView
+                        android:id="@+id/ampm"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/time_display_am"
+                        android:textSize="36sp"
+                        android:gravity="center"
+                        android:textColor="@color/colorDarkText"/>
+                </LinearLayout>
+
+                <com.mji.tapia.youcantapia.widget.CustomFontTextView
+                    android:id="@+id/time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="10:00"
+                    android:layout_marginStart="20dp"
+                    android:textColor="@color/colorDarkText"
+                    android:textSize="110sp"
+                    android:textStyle="bold"
+                    android:layout_gravity="top"
+                    app:fontFamily="sans-serif" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/setting"
+            android:orientation="vertical"
+            android:layout_width="160dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="50dp"
+            android:background="@drawable/shared_wide_card"
+            android:elevation="5dp"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:src="@drawable/menu_setting_icon_dark" />
+
+            <com.mji.tapia.youcantapia.widget.CustomFontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="@string/time_clock_setting"
+                android:textColor="@color/colorDarkText"
+                android:textSize="36sp"
+                android:textStyle="bold"
+                app:fontFamily="sans-serif" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

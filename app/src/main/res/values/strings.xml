@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">youcantapia</string>
+
+    <string name="error_msg">エラーが発生しました。\nOKボタンを押してください。</string>
+    <string name="error_msg_ok">OK</string>
+
+    <string name="battery_msg">電池残量が%d％です。\n充電してください。</string>
+    <string name="battery_speech">電池残量が%d％です。充電してください。</string>
+
+    <string name="battery_msg_ok">OK</string>
+
+    <string name="yes">はい</string>
+    <string name="no">いいえ</string>
+
+    <string-array name="joke_ending">
+        <item>ナーンチャッテ！</item>
+        <item>えへっ</item>
+        <item>ぷぷぷっ</item>
+        <item>あはは</item>
+        <item>座布団一枚</item>
+        <item/>
+    </string-array>
+</resources>

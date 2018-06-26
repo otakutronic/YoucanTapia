@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="standby_first_introduction">ありがとうございます、%s。これからよろしくお願い致します。</string>
+    <string name="standby_splash_intro">何か御用ですか？</string>
+
+
+    <string-array name="standby_auto_speech">
+        <item>僕とおしゃべりしよう</item>
+        <item>音楽を聴きませんか</item>
+    </string-array>
+
+    <string-array name="talk_fail">
+        <item>ごめんなさい。わかりませんでした</item>
+        <item>う～ん、どう？</item>
+    </string-array>
+
+    <string name="talk_mode_intro">はい、%s。何か御用でしょうか？</string>
+
+</resources>

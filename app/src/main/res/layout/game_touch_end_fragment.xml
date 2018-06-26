@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.mji.tapia.youcantapia.widget.CustomFontTextView
+        android:id="@+id/detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toStartOf="@id/score"
+        android:gravity="center_vertical"
+        app:custom_font="fonts/mplus-2p-black.ttf"
+        android:text="@string/game_touch_end_detail"
+        android:textSize="36sp"
+        android:textColor="@color/colorDarkText"/>
+
+    <com.mji.tapia.youcantapia.widget.CustomFontTextView
+        android:id="@+id/point"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        app:custom_font="fonts/mplus-2p-black.ttf"
+        android:text="点"
+        android:textSize="36sp"
+        android:layout_marginEnd="-20dp"
+        android:layout_marginBottom="-20dp"
+        android:layout_alignEnd="@id/score"
+        android:layout_alignBottom="@id/score"
+        android:textColor="@color/colorDarkText"/>
+
+    <com.mji.tapia.youcantapia.widget.CustomFontTextView
+        android:id="@+id/score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="100"
+        android:textSize="190sp"
+        android:gravity="center"
+        android:textColor="@color/colorDarkText"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_toEndOf="@id/score"
+        android:clipToPadding="false"
+        android:layout_marginStart="30dp"
+        android:layout_centerVertical="true">
+        <com.mji.tapia.youcantapia.widget.CustomFontTextView
+            android:id="@+id/repeat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/game_touch_end_repeat"
+            android:textSize="36sp"
+            android:gravity="center"
+            android:elevation="5dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="50dp"
+            android:background="@drawable/shared_button_small_primary"
+            android:textColor="@color/colorLightText"/>
+        <com.mji.tapia.youcantapia.widget.CustomFontTextView
+            android:id="@+id/ranking"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="@string/game_touch_end_ranking"
+            android:textSize="36sp"
+            android:paddingLeft="20dp"
+            android:elevation="5dp"
+            android:paddingRight="20dp"
+            android:gravity="center"
+            android:background="@drawable/shared_button_small_primary"
+            android:textColor="@color/colorLightText"/>
+    </LinearLayout>
+
+</RelativeLayout>

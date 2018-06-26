@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="today_menu_title">今日の○○</string>
+    <string name="today_menu_first_label">今日のう回</string>
+    <string name="today_menu_second_label">今日のう回</string>
+    <string name="today_menu_third_label">今日のう回</string>
+    <string name="today_menu_fourth_label">今日のう回</string>
+
+</resources>

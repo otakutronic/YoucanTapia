@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="game_menu_title">ゲーム</string>
+    <string name="game_menu_notore_label">脳トレ</string>
+    <string name="game_menu_hyakuninishu_label">百人一首\nゲーム</string>
+    <string name="game_menu_touch_label">タピ太\nタッチ</string>
+    <string name="game_menu_marubatsu_label">○✖\nゲーム</string>
+    <string name="game_menu_speech">お好みのゲームを選んでください。</string>
+
+    <!--Touch Game-->
+    <string name="game_touch_menu_detail">できる限り画面上のタ\nピ太をタッチしてね！</string>
+    <string name="game_touch_menu_title">タピ太タッチ</string>
+    <string name="game_touch_menu_start">開始！</string>
+    <string name="game_touch_menu_ranking">ランキング</string>
+    <string name="game_touch_menu_speech">僕タピたのアイコンを時間内にタッチしてくださいね！目指せ100点！</string>
+
+    <string name="game_touch_play_countdown">残り時間%d秒</string>
+
+    <string name="game_touch_end_detail">お疲れ様です。\nあなたの成績は</string>
+    <string name="game_touch_end_ranking">ランキング</string>
+    <string name="game_touch_end_repeat">もう―回</string>
+
+    <string name="game_touch_ranking_title">ランキング</string>
+    <string name="game_touch_ranking_point">%d点</string>
+    <string name="game_touch_ranking_speech">ただいまのランキングと点数はこちら！</string>
+
+    <string name="game_touch_start_speech">スタート</string>
+    <string name="game_touch_end_speech">お疲れ様です。%sの成績は%s点です。</string>
+
+    <!--Marubatsu Game-->
+    <string name="game_marubatsu_menu_title">○✖ゲーム</string>
+    <string name="game_marubatsu_menu_start">開始！</string>
+    <string name="game_marubatsu_menu_detail">タテ・ヨコ・ナナメ\n3つ揃ったら勝ち！</string>
+    <string name="game_marubatsu_menu_speech">僕と勝負です！負けませんよー。</string>
+
+    <string name="game_marubatsu_dialog_win">おめでとう！\nあなたの勝ちです！</string>
+    <string name="game_marubatsu_dialog_lose">ぼくの勝ちです！</string>
+    <string name="game_marubatsu_dialog_draw">引き分けです！</string>
+    <string name="game_marubatsu_dialog_stop">やめる</string>
+    <string name="game_marubatsu_dialog_repeat">もう一回</string>
+    <string name="game_marubatsu_you">あなた：%s</string>
+    <string name="game_marubatsu_tapita">タピ太：%s</string>
+
+
+    <string name="game_marubatsu_speech_start_tapita_batsu">ぼくがばつで、%sがまるです。</string>
+    <string name="game_marubatsu_speech_start_tapita_maru">ぼくがまるで、%sがばつです。</string>
+
+    <string name="game_marubatsu_speech_start_tapita_first">ぼくからはじめますね</string>
+    <string name="game_marubatsu_speech_start_user_first">あなたからはじめてください</string>
+
+    <string name="game_marubatsu_speech_user_lose">ぼくの勝ちです！</string>
+    <string name="game_marubatsu_speech_user_win">%sの勝ちです！</string>
+    <string name="game_marubatsu_speech_draw">引き分けです！</string>
+
+</resources>

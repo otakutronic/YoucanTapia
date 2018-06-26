@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">@color/yellow</color>
+    <color name="colorPrimaryDark">@color/dk_yellow</color>
+    <color name="colorAccent">@color/green</color>
+    <color name="colorAccentDark">@color/dk_green</color>
+    <color name="colorBackground">@color/clear_yellow</color>
+    <color name="colorLightText">@color/white</color>
+    <color name="colorText">@color/gray</color>
+    <color name="colorDarkText">@color/black</color>
+    <color name="colorCard">@color/white</color>
+    <color name="colorCardDark">@color/lt_gray</color>
+
+
+    <color name="mjiGreen">#C2D94E</color>
+
+    <color name="yellow">#F4B642</color>
+    <color name="dk_yellow">#b38531</color>
+    <color name="blue">#509DC6</color>
+    <color name="lt_green">#A1CD7A</color>
+    <color name="green">#4F8835</color>
+    <color name="dk_green">#365C24</color>
+    <color name="lt_brown">#D5C4B2</color>
+    <color name="white">#FFFFFF</color>
+    <color name="white_alpha">#AAFFFFFF</color>
+    <color name="lt_gray">#b6b5b5</color>
+    <color name="disabled_gray">#DCDCDC</color>
+    <color name="gray">#4D4D4D</color>
+    <color name="black">#000000</color>
+    <color name="clear_yellow">#F2F0DB</color>
+    <color name="dk_clear_yellow">#B9B7A5</color>
+    <color name="red">#E35654</color>
+    <color name="dk_red">#af3337</color>
+
+    <color name="transparent">#00000000</color>
+</resources>
+

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Possible tts_emotion = normal(default)|happy|sad|angry -->
+<!-- Possible face_emotion = normal(default)|happy|sad|angry|love|smile|blinking|confuse|trick -->
+<!-- Possible season type = all|spring|summer|fall|winter-->
+<!-- Possible move type = down|up|left|right|wait -->
+<!-- Possile command type = conversation|... TODO define all possible command type-->
+<Scenario model="fuetrek/mji_robot.fuet">
+
+    <Variable name="owner"/>
+    <Variable name="owner_birthday"/>
+    <Variable name="register_date"/>
+    <Variable name="owner_food"/>
+
+    <Movement id="bow">
+        <move type="down" degree="20"/>
+        <move type="wait" time="1000"/>
+        <move type="up" degree="20"/>
+    </Movement>
+
+    <Command type="conversation">
+
+        <Keyword>おはよう</Keyword>
+        <Keyword>おはようございます</Keyword>
+        <Keyword>おはよーございます</Keyword>
+
+        <Answer tts_emotion="happy" face_emotion="smile" movement_id="bow">おはようございます、{{owner}}！</Answer>
+        <Answer>おはようございます、{{owner}}！あいさつしてくれて、うれしいです。</Answer>
+        <Answer required_food="ramen">おはようございます、{{owner}}！あいさつしてくれて、うれしいです。</Answer>
+        <Answer required_hobby="music|sports">おはようございます、{{owner}}！あいさつしてくれて、うれしいです。</Answer>
+        <Answer tts_emotion="happy" season="spring">おはようございます、{{owner}}。春はなんだか、わくわくしますね。</Answer>
+    </Command>
+
+    <Command type="goto" param="karaoke">
+
+        <Keyword>おはよう</Keyword>
+        <Keyword>おはようございます</Keyword>
+        <Keyword>おはよーございます</Keyword>
+
+        <Answer tts_emotion="happy" face_emotion="smile" movement_id="bow">おはようございます、{{owner}}！</Answer>
+        <Answer>おはようございます、{{owner}}！あいさつしてくれて、うれしいです。</Answer>
+        <Answer required_food="ramen">おはようございます、{{owner}}！あいさつしてくれて、うれしいです。</Answer>
+        <Answer required_hobby="music|sports">おはようございます、{{owner}}！あいさつしてくれて、うれしいです。</Answer>
+        <Answer tts_emotion="happy" season="spring">おはようございます、{{owner}}。春はなんだか、わくわくしますね。</Answer>
+    </Command>
+</Scenario>

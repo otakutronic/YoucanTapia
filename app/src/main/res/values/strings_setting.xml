@@ -1,0 +1,119 @@
+<resources>
+    <string name="introduction_speech">初めまして！わたくしは執事見習いロボット「タピた」です！あなたのお役に立てるように、でも時々、失敗しちゃう時もあるかもしれませんが、わたくし、がんばります！これからわたくしと一緒に、初回設定を行いますよ。あなたのことをたくさん知りたいので、誕生日や好きな食べ物を教えてください。わたくし、しっかり覚えますよ！</string>
+
+
+    <string name="time_clock_setting">削除</string>
+    <string name="time_display_detail">現実時間とずれている場\n合、変更ボタンを押し、\n修正してください。</string>
+    <string name="time_display_title">時間確認</string>
+    <string name="time_display_am">午前</string>
+    <string name="time_display_pm">午後</string>
+    <string name="time_display_setting">変更</string>
+
+    <string name="time_display_setting_speech">日にちと時間は合っていますか？正しい場合は確定ボタンを押してください。ずれている場合は、変更ボタンを押してください。</string>
+    <string name="date_setting_speech">正しい日付を設定してください。</string>
+    <string name="time_setting_speech">正しい時間を設定してください。</string>
+
+
+    <string name="date_setting_title">日付設定</string>
+    <string name="time_setting_title">時間設定</string>
+
+    <string name="share_setting_confirm">確定</string>
+    <string name="share_setting_next">次へ</string>
+    <string name="share_setting_back">戻る</string>
+
+    <string name="user_food_setting_title">あなたの好きな食べ物</string>
+    <string name="user_food_carry">カレー</string>
+    <string name="user_food_ramen">ラーメン</string>
+    <string name="user_food_omurice">オムライス</string>
+    <string name="user_food_hamburger">ハンバーグ</string>
+    <string name="user_food_sushi">寿司</string>
+    <string name="user_food_tonkatsu">トンカツ</string>
+    <string name="user_food_cake">ケーキ</string>
+    <string name="user_food_boiled_egg">ゆでたまご</string>
+    <string name="user_food_speech">%sの好きな食べ物を選んでください。</string>
+
+
+    <string name="user_hobby_setting_title">あなたの趣味</string>
+    <string name="user_hobby_travel">旅行</string>
+    <string name="user_hobby_walking">ウォーキング</string>
+    <string name="user_hobby_reading">読書</string>
+    <string name="user_hobby_music">音楽</string>
+    <string name="user_hobby_movie">映画</string>
+    <string name="user_hobby_fishing">釣り</string>
+    <string name="user_hobby_photo">写真</string>
+    <string name="user_hobby_yoga">ヨガ</string>
+    <string name="user_hobby_sports">スポーツ</string>
+    <string name="user_hobby_speech">%sの趣味を選んでください。</string>
+
+
+    <string name="user_name_setting_title">あなたの呼び名</string>
+    <string name="user_name_add">+ 新規追加</string>
+    <string name="user_name_keyboard_hint">○○さま</string>
+    <string name="user_name_speech">%sでよろしいですか？</string>
+    <string name="user_name_intro_speech">何とお呼びすればよろしいですか？</string>
+    <string name="user_name_edit">変 更</string>
+    <string-array name="user_default_names">
+        <item>ご主人様</item>
+        <item>おぼっちゃま</item>
+        <item>お嬢様</item>
+        <item>マスター</item>
+    </string-array>
+
+    <string name="user_birthday_setting_title">あなたの誕生日</string>
+    <string name="user_birthday_first_setting_speech">かしこまりました、%s。%sのお誕生日はいつですか？</string>
+    <string name="user_birthday_speech">%sのお誕生日はいつですか？</string>
+
+
+    <string name="menu_tapita_talk_label">タピ太からの会話</string>
+    <string name="menu_volume_label">音量</string>
+    <string name="menu_brightness_label">明るさ</string>
+    <string name="menu_position_label">角度</string>
+    <string name="menu_battery_label">電池</string>
+    <string name="menu_profile_label">登録内容</string>
+    <string name="menu_license_label">ライセンス</string>
+    <string name="menu_serial_label">シリアル</string>
+    <string name="menu_reset_label">初期化</string>
+    <string name="menu_setting_speech">設定したい項目をお選びください。</string>
+
+
+    <string name="serial_title">シリアル</string>
+    <string name="serial_speech">わたくしのシリアル番号です。</string>
+
+    <string name="license_title">ライセンス</string>
+    <string name="license_speech">タピ太で使われているライセンスはこちらです。</string>
+
+
+    <string name="volume_title">音量</string>
+    <string name="volume_speech_up"> 音量をひとつ上げました</string>
+    <string name="volume_speech_down">音量をひとつ下げました</string>
+
+    <string name="brightness_title">明るさ</string>
+    <string name="brightness_up_speech">照度をひとつ上げました。</string>
+    <string name="brightness_down_speech">照度をひとつ下げました。</string>
+
+    <string name="battery_title">電池</string>
+    <string name="battery_screen_speech">%sパーセントです。</string>
+    <string name="battery_screen_low_speech">%sパーセントです。充電してください。</string>
+
+    <string name="position_title">角度</string>
+    <string name="position_up">上に向く</string>
+    <string name="position_down">下に向く</string>
+    <string name="position_speech">位置を調整します</string>
+
+    <string name="profile_title">登録内容</string>
+    <string name="profile_detail">変更したい項目を押してください。</string>
+    <string name="profile_name_label">呼び名</string>
+    <string name="profile_birthday_label">誕生日</string>
+    <string name="profile_favorite_food_label">好きな\n食べ物</string>
+    <string name="profile_hobbies_label">趣味</string>
+
+    <string name="factory_reset_title">初期化</string>
+    <string name="factory_reset_detail">充電状態で実行してください。\n初期化するとすべてのデータが失われます。\nよろしいですか？</string>
+    <string name="factory_reset_confirm">本当によろしいですか？</string>
+    <string name="factory_reset_loading">初期化中...</string>
+    <string name="factory_reset_loading_detail">電源ボタンにを触らないでください。</string>
+    <string name="factory_reset_finish">初期化完了しました。</string>
+    <string name="factory_reset_restart">初期設定</string>
+    <string name="factory_reset_speech">初期化するとすべてのデータが失われます。初期化なさいますか？</string>
+    <string name="factory_reset_confirm_speech">初期化したあと、データは復元できません。本当によろしいですか？</string>
+</resources>

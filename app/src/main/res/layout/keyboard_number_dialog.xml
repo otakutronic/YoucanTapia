@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="800dp"
+    android:layout_height="match_parent"
+    android:paddingStart="20dp"
+    android:paddingEnd="20dp"
+    android:layout_centerInParent="true"
+    >
+
+    <com.mji.tapia.youcantapia.widget.CustomFontTextView
+        android:id="@+id/background"
+        android:layout_width="380dp"
+        android:layout_height="380dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/shared_wide_card"
+        android:elevation="5dp"
+        android:gravity="center"
+        android:textColor="@color/colorDarkText"
+        android:textSize="50sp"
+        android:textStyle="bold" />
+
+    <com.mji.tapia.youcantapia.widget.KeyboardNumberView
+        android:id="@+id/number_keyboard"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true" />
+</RelativeLayout>

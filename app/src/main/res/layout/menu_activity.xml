@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:background="@color/clear_yellow"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycle_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:orientation="horizontal"
+        android:overScrollMode="never"></android.support.v7.widget.RecyclerView>
+
+    <LinearLayout
+        android:id="@+id/message_notification"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="5dp"
+        android:clipToPadding="false"
+        android:padding="10dp"
+        android:visibility="invisible">
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:elevation="5dp"
+            android:src="@drawable/dialog_warning_icon"
+            android:background="@drawable/shared_button_primary"/>
+
+        <com.mji.tapia.youcantapia.widget.CustomFontTextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/menu_has_message"
+            android:textSize="40sp"
+            android:layout_marginStart="20dp"
+            android:gravity="center"
+            android:textColor="@color/colorDarkText"/>
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/left_arrow"
+        android:background="@android:color/transparent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/menu_arrow_left"
+        android:layout_marginBottom="20dp"
+        android:layout_marginStart="100dp"/>
+
+    <ImageButton
+        android:id="@+id/right_arrow"
+        android:background="@android:color/transparent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/menu_arrow_left"
+        android:rotation="180"
+        android:layout_marginEnd="100dp"/>
+</RelativeLayout>

@@ -1,0 +1,14 @@
+<resources>
+
+    <string name="menu_setting_label">設定</string>
+
+    <string name="menu_convenient_label">便利機能</string>
+    <string name="menu_sleep_mode_label">スリープ\nモード</string>
+    <string name="menu_todays_label">今日の○○</string>
+    <string name="menu_music_label">音楽</string>
+    <string name="menu_game_label">ゲーム</string>
+    <string name="menu_schedule_label">予定表</string>
+    <string name="menu_has_message">伝言あり</string>
+
+    <string name="menu_speech">どの機能をお使いになりますか？</string>
+</resources>

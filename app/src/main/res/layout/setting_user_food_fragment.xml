@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <com.mji.tapia.youcantapia.widget.CustomFontTextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="@string/user_food_setting_title"
+        android:textSize="50sp"
+        android:gravity="center"
+        android:layout_marginTop="40dp"
+        android:layout_alignStart="@id/buttons"
+        android:textColor="@color/colorDarkText"/>
+
+    <LinearLayout
+        android:id="@+id/buttons"
+        android:layout_below="@id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/shared_wide_card"
+        android:gravity="center_horizontal"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:elevation="5dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/arrow_up"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:rotation="180"
+            android:src="@drawable/shared_large_arrow_down" />
+
+        <GridView
+            android:id="@+id/food_list"
+            android:layout_width="600dp"
+            android:layout_height="170dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="5dp"
+            android:clipToPadding="false"
+            android:numColumns="2"
+            android:overScrollMode="never"
+            android:requiresFadingEdge="vertical"
+            android:scrollbarAlwaysDrawVerticalTrack="true"
+            android:scrollbars="vertical"
+            android:horizontalSpacing="25dp"
+            android:gravity="center"
+            android:verticalSpacing="5dp"
+            tools:listitem="@layout/setting_user_preference_item" />
+
+        <ImageView
+            android:id="@+id/arrow_down"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/shared_large_arrow_down" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:clipToPadding="false"
+        android:padding="20dp"
+        android:layout_marginBottom="30dp">
+        <com.mji.tapia.youcantapia.widget.CustomFontTextView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/share_setting_back"
+            android:paddingStart="40dp"
+            android:paddingEnd="40dp"
+            android:elevation="5dp"
+            android:textSize="36sp"
+            android:background="@drawable/shared_button_small_primary"
+            android:gravity="center"
+            android:textColor="@color/colorLightText"/>
+        <com.mji.tapia.youcantapia.widget.CustomFontTextView
+            android:id="@+id/next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="60dp"
+            android:elevation="5dp"
+            android:text="@string/share_setting_confirm"
+            android:background="@drawable/shared_button_small_primary"
+            android:paddingStart="40dp"
+            android:paddingEnd="40dp"
+            android:textSize="36sp"
+            android:gravity="center"
+            android:textColor="@color/colorLightText"/>
+    </LinearLayout>
+</RelativeLayout>

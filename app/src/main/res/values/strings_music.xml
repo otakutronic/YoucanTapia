@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="music_menu_title">音楽</string>
+    <string name="music_menu_karaoke_label">カラオケ</string>
+    <string name="music_menu_song_label">音楽再生</string>
+    <string name="music_menu_speech">カラオケか音楽再生か、どちらかを選んでください。</string>
+
+    <string name="music_karaoke_menu_title">カラオケ</string>
+    <string name="music_karaoke_menu_category_1_label">古典</string>
+    <string name="music_karaoke_menu_category_2_label">流行</string>
+    <string name="music_karaoke_menu_category_3_label">演歌</string>
+    <string name="music_karaoke_menu_category_4_label">あの頃</string>
+    <string name="music_karaoke_menu_category_5_label">アニメ</string>
+    <string name="music_karaoke_menu_category_6_label">お気に\n入り</string>
+    <string name="music_karaoke_menu_speech">お好みのカテゴリを選択してください。</string>
+
+    <string name="music_karaoke_category_1_title">古典</string>
+    <string name="music_karaoke_category_2_title">流行</string>
+    <string name="music_karaoke_category_3_title">演歌</string>
+    <string name="music_karaoke_category_4_title">あの頃</string>
+    <string name="music_karaoke_category_5_title">アニメ</string>
+
+    <string name="music_karaoke_category_speech">お好みの曲を選択してください。</string>
+
+
+    <string name="music_favorite_title">お気に入り</string>
+
+    <string name="music_volume_change">音量\n調整</string>
+    <string name="music_karaoke_finish">曲の再生が終了しました</string>
+    <string name="music_karaoke_finish_speech_0">見事な歌声ですね！いよっ%s！</string>
+    <string name="music_karaoke_finish_speech_1">素晴らしい歌声！感動しました！</string>
+    <string name="music_karaoke_finish_speech_2">こんな感動的な歌を聴けるなんて！</string>
+    <string name="music_karaoke_repeat">もう一回</string>
+    <string name="music_karaoke_stop">戻る</string>
+
+    <string name="music_player_repeat">繰り\n返し</string>
+
+
+    <string name="music_player_menu_title">音楽再生</string>
+    <string name="music_player_menu_speech">お好みのカテゴリを選択してください。</string>
+    <string name="music_player_menu_category_1_label">古典</string>
+    <string name="music_player_menu_category_2_label">流行</string>
+    <string name="music_player_menu_category_3_label">演歌</string>
+    <string name="music_player_menu_category_4_label">あの頃</string>
+    <string name="music_player_menu_category_5_label">ラジオ\n体操</string>
+    <string name="music_player_menu_category_6_label">お気に\n入り</string>
+
+    <string name="music_player_category_speech">お好みの曲を選択してください。</string>
+    <string name="music_player_category_1_title">古典</string>
+    <string name="music_player_category_2_title">流行</string>
+    <string name="music_player_category_3_title">演歌</string>
+    <string name="music_player_category_4_title">あの頃</string>
+    <string name="music_player_category_5_title">アニメ</string>
+
+    <string name="music_player_on">ON</string>
+    <string name="music_player_off">OFF</string>
+</resources>

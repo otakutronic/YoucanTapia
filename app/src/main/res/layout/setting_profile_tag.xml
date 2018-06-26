@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    >
+
+    <com.mji.tapia.youcantapia.widget.CustomFontTextView
+        android:id="@+id/tag"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:background="@drawable/shared_box"
+        android:gravity="center_vertical"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:text="@string/profile_birthday_label"
+        android:textColor="@color/colorDarkText"
+        android:textStyle="bold"
+        android:clickable="false"
+        android:focusable="false"
+        android:textSize="30sp" />
+</RelativeLayout>

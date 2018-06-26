@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginStart="100dp">
+
+    <LinearLayout
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/profile_icon" />
+
+        <com.mji.tapia.youcantapia.widget.CustomFontTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:text="@string/profile_title"
+            android:textColor="@color/colorDarkText"
+            android:textSize="70sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+    <com.mji.tapia.youcantapia.widget.CustomFontTextView
+        android:id="@+id/detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:text="@string/profile_detail"
+        android:textColor="@color/colorDarkText"
+        android:layout_below="@id/title"
+        android:layout_centerHorizontal="true"
+        android:textSize="36sp" />
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/detail"
+        android:requiresFadingEdge="vertical"
+        android:layout_marginTop="10dp"
+        android:overScrollMode="never"
+        android:layout_marginBottom="20dp"
+        android:paddingTop="30dp"
+        android:elevation="5dp"
+        android:paddingBottom="30dp"
+        android:background="@drawable/shared_wide_card">
+        <RelativeLayout
+            android:layout_width="600dp"
+            android:layout_height="wrap_content">
+
+            <com.mji.tapia.youcantapia.widget.CustomFontTextView
+                android:id="@+id/name_label"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignTop="@+id/name_input"
+                android:layout_marginStart="22dp"
+                android:gravity="center_vertical"
+                android:text="@string/profile_name_label"
+                android:textColor="@color/colorDarkText"
+                android:textSize="36sp"
+                android:textStyle="bold" />
+
+            <com.mji.tapia.youcantapia.widget.CustomFontTextView
+                android:id="@+id/name_input"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/shared_box"
+                android:layout_marginStart="160dp"
+                android:layout_marginEnd="70dp"
+                android:gravity="center_vertical"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+
+                android:text="@string/profile_name_label"
+                android:textColor="@color/colorDarkText"
+                android:textStyle="bold"
+                android:textSize="30sp" />
+
+            <com.mji.tapia.youcantapia.widget.CustomFontTextView
+                android:id="@+id/birthday_label"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_alignParentStart="true"
+                android:layout_below="@id/name_label"
+                android:layout_marginStart="22dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center_vertical"
+                android:text="@string/profile_birthday_label"
+                android:textColor="@color/colorDarkText"
+                android:textSize="36sp"
+                android:textStyle="bold" />
+
+            <com.mji.tapia.youcantapia.widget.CustomFontTextView
+                android:id="@+id/birthday_input"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/shared_box"
+                android:layout_marginStart="160dp"
+                android:layout_marginEnd="70dp"
+                android:gravity="center_vertical"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:layout_alignTop="@id/birthday_label"
+                android:text="@string/profile_birthday_label"
+                android:textColor="@color/colorDarkText"
+                android:textStyle="bold"
+                android:textSize="30sp" />
+
+            <LinearLayout
+                android:id="@+id/food"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/birthday_label"
+                android:layout_marginStart="22dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="70dp"
+                >
+                <com.mji.tapia.youcantapia.widget.CustomFontTextView
+                    android:id="@+id/food_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:gravity="top|start"
+                    android:text="@string/profile_favorite_food_label"
+                    android:textColor="@color/colorDarkText"
+                    android:textSize="36sp"
+                    android:textStyle="bold" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/food_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="26dp"
+                    android:layoutDirection="ltr"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/hobby"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/food"
+                android:layout_marginStart="22dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="70dp">
+
+                <com.mji.tapia.youcantapia.widget.CustomFontTextView
+                    android:layout_width="112dp"
+                    android:layout_height="100dp"
+                    android:gravity="top|start"
+                    android:text="@string/profile_hobbies_label"
+                    android:textColor="@color/colorDarkText"
+                    android:textSize="36sp"
+                    android:textStyle="bold" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/hobby_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginStart="26dp"
+                    android:layoutDirection="ltr"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

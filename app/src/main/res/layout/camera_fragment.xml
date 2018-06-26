@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/fm"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#000100">
+
+    <SurfaceView
+        android:id="@+id/surfaceView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+    <Button
+        android:id="@+id/finishBtn"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:layout_gravity="bottom|center"
+        android:layout_marginBottom="50dp"
+        android:layout_marginLeft="50dp"
+        android:background="@drawable/camera_finish_button"
+        android:text="@string/camera_finish_label"
+        android:textSize="20sp"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/retakeBtn"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:layout_gravity="bottom|center"
+        android:layout_marginBottom="50dp"
+        android:layout_marginStart="200dp"
+        android:background="@drawable/yellow_button"
+        android:text="@string/camera_retake_label"
+        android:textSize="20sp"
+        android:visibility="gone" />
+
+    <com.mji.tapia.youcantapia.widget.CustomFontTextView
+        android:id="@+id/countDownTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="30dp"
+        android:gravity="center"
+        android:textColor="@color/lt_green"
+        android:textSize="250sp"
+        android:visibility="gone" />
+
+</FrameLayout>

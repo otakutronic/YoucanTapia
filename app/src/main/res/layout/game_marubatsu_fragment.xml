@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.mji.tapia.youcantapia.widget.CustomFontTextView
+        android:id="@+id/you"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="170dp"
+        android:layout_marginStart="50dp"
+        app:custom_font="fonts/mplus-2p-black.ttf"
+        android:text="あなた："
+        android:textSize="46sp"
+        android:textColor="@color/colorDarkText"/>
+
+    <com.mji.tapia.youcantapia.widget.CustomFontTextView
+        android:id="@+id/tapita"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/you"
+        android:layout_below="@+id/you"
+
+        android:layout_marginTop="20dp"
+        android:text="タピ太："
+        android:textColor="@color/colorDarkText"
+        android:textSize="46sp"
+        app:custom_font="fonts/mplus-2p-black.ttf" />
+
+    <com.eftimoff.androipathview.PathView
+        android:id="@+id/square_1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:pathColor="@color/black"
+        app:pathWidth="10dp"
+        android:layout_marginStart="400dp"
+        android:layout_marginTop="100dp"
+        />
+
+    <com.eftimoff.androipathview.PathView
+        android:id="@+id/square_2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:pathColor="@color/black"
+        app:pathWidth="10dp"
+        android:layout_toEndOf="@id/ver_line1"
+        android:layout_alignTop="@id/square_1"/>
+
+    <com.eftimoff.androipathview.PathView
+        android:id="@+id/square_3"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:pathColor="@color/black"
+        app:pathWidth="10dp"
+        android:layout_toEndOf="@id/ver_line2"
+        android:layout_alignTop="@id/square_1"/>
+
+    <com.eftimoff.androipathview.PathView
+        android:id="@+id/square_4"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:pathColor="@color/black"
+        app:pathWidth="10dp"
+        android:layout_alignStart="@id/square_1"
+        android:layout_below="@id/hor_line1"/>
+
+    <com.eftimoff.androipathview.PathView
+        android:id="@+id/square_5"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:pathColor="@color/black"
+        app:pathWidth="10dp"
+        android:layout_toEndOf="@id/ver_line1"
+        android:layout_alignTop="@id/square_4"/>
+
+    <com.eftimoff.androipathview.PathView
+        android:id="@+id/square_6"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:pathColor="@color/black"
+        app:pathWidth="10dp"
+        android:layout_toEndOf="@id/ver_line2"
+        android:layout_alignTop="@id/square_4"/>
+
+    <com.eftimoff.androipathview.PathView
+        android:id="@+id/square_7"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:pathColor="@color/black"
+        app:pathWidth="10dp"
+        android:layout_alignStart="@id/square_1"
+        android:layout_below="@id/hor_line2"/>
+
+    <com.eftimoff.androipathview.PathView
+        android:id="@+id/square_8"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:pathColor="@color/black"
+        app:pathWidth="10dp"
+        android:layout_toEndOf="@id/ver_line1"
+        android:layout_alignTop="@id/square_7"/>
+
+    <com.eftimoff.androipathview.PathView
+        android:id="@+id/square_9"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:pathColor="@color/black"
+        app:pathWidth="10dp"
+        android:layout_toEndOf="@id/ver_line2"
+        android:layout_alignTop="@id/square_7"/>
+
+
+    <com.eftimoff.androipathview.PathView
+        android:id="@+id/hor_line1"
+        android:layout_width="330dp"
+        android:layout_height="10dp"
+        app:pathColor="@color/black"
+        app:pathWidth="40dp"
+        android:layout_alignStart="@id/square_1"
+        android:layout_below="@id/square_1"/>
+
+    <com.eftimoff.androipathview.PathView
+        android:id="@+id/hor_line2"
+        android:layout_width="330dp"
+        android:layout_height="10dp"
+        app:pathColor="@color/black"
+        app:pathWidth="40dp"
+        android:layout_alignStart="@id/square_4"
+        android:layout_below="@id/square_4"/>
+
+    <com.eftimoff.androipathview.PathView
+        android:id="@+id/ver_line1"
+        android:layout_width="10dp"
+        android:layout_height="330dp"
+        app:pathColor="@color/black"
+        app:pathWidth="40dp"
+        android:layout_toEndOf="@id/square_1"
+        android:layout_alignTop="@id/square_1"/>
+
+    <com.eftimoff.androipathview.PathView
+        android:id="@+id/ver_line2"
+        android:layout_width="10dp"
+        android:layout_height="330dp"
+        app:pathColor="@color/black"
+        app:pathWidth="40dp"
+        android:layout_toEndOf="@id/square_2"
+        android:layout_alignTop="@id/square_2"/>
+
+</RelativeLayout>

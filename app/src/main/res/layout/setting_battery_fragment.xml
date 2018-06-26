@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginStart="100dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/battery_icon" />
+
+        <com.mji.tapia.youcantapia.widget.CustomFontTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:text="@string/battery_title"
+            android:textColor="@color/colorDarkText"
+            android:textSize="70sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="230dp"
+        >
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+            <ProgressBar
+                android:id="@+id/level"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                android:layout_width="257dp"
+                android:layout_height="167dp"
+                android:background="@drawable/battery_frame"
+                android:indeterminate="false"
+                android:paddingTop="30dp"
+                android:paddingStart="30dp"
+                android:paddingBottom="30dp"
+                android:paddingEnd="60dp"
+                android:progressTint="@color/lt_green"
+                android:max="100"
+                android:progress="70"
+                android:progressDrawable="@drawable/battery_progress"/>
+
+            <ImageView
+                android:id="@+id/charging_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/battery_charging_icon"
+                android:layout_centerInParent="true"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp"
+                android:paddingStart="30dp"
+                android:paddingEnd="60dp"/>
+        </RelativeLayout>
+        <com.mji.tapia.youcantapia.widget.CustomFontTextView
+            android:id="@+id/percent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="30dp"
+            android:text="25%"
+            android:textColor="@color/colorText"
+            android:textSize="64sp" />
+    </LinearLayout>
+    
+</RelativeLayout>

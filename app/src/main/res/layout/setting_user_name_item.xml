@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center">
+        <ImageView
+            android:id="@+id/check_icon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/shared_check_icon"/>
+
+        <com.mji.tapia.youcantapia.widget.CustomFontTextView
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/user_name_setting_title"
+            android:textSize="46sp"
+            app:autoSizeTextType="uniform"
+            android:maxLines="1"
+            android:layout_marginStart="30dp"
+            android:gravity="start"
+            android:textColor="@color/colorDarkText"/>
+    </LinearLayout>
+
+
+</RelativeLayout>

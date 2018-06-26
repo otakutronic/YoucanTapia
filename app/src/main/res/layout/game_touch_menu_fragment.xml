@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginStart="70dp"
+        android:layout_centerVertical="true">
+        <com.mji.tapia.youcantapia.widget.CustomFontTextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:custom_font="fonts/mplus-2p-black.ttf"
+            android:layout_below="@id/imageView"
+            android:text="@string/game_touch_menu_title"
+            android:textSize="50sp"
+            android:textColor="@color/colorDarkText"/>
+        <com.mji.tapia.youcantapia.widget.CustomFontTextView
+            android:id="@+id/detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:custom_font="fonts/mplus-2p-black.ttf"
+            android:text="@string/game_touch_menu_detail"
+            android:textSize="36sp"
+            android:textColor="@color/colorDarkText"/>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="180dp"
+        android:layout_alignStart="@id/start"
+        android:layout_alignEnd="@id/start"
+        android:src="@drawable/game_touch_icon"
+        android:layout_marginTop="10dp"
+        android:rotation="-25"/>
+
+    <com.mji.tapia.youcantapia.widget.CustomFontTextView
+        android:id="@+id/start"
+        android:layout_width="280dp"
+        android:layout_height="140dp"
+        app:custom_font="fonts/mplus-2p-black.ttf"
+        android:layout_toEndOf="@id/text"
+        android:layout_marginTop="100dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginBottom="10dp"
+        android:elevation="5dp"
+        android:text="@string/game_touch_menu_start"
+        android:textSize="50sp"
+        android:background="@drawable/shared_card"
+        android:gravity="center"
+        android:textColor="@color/colorDarkText"/>
+
+    <com.mji.tapia.youcantapia.widget.CustomFontTextView
+        android:id="@+id/ranking"
+        android:layout_width="280dp"
+        android:layout_height="140dp"
+        android:layout_below="@+id/start"
+        android:layout_marginTop="10dp"
+        android:layout_alignStart="@id/start"
+        android:background="@drawable/shared_card"
+        android:gravity="center"
+        android:elevation="5dp"
+        android:text="@string/game_touch_menu_ranking"
+        android:textColor="@color/colorDarkText"
+        android:textSize="50sp"
+        app:custom_font="fonts/mplus-2p-black.ttf" />
+
+</RelativeLayout>

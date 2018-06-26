@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.mji.tapia.youcantapia.widget.CustomFontTextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="@string/user_birthday_setting_title"
+        android:textSize="50sp"
+        android:gravity="center"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="50dp"
+        android:layout_above="@id/buttons"
+        android:layout_alignStart="@id/buttons"
+        android:textColor="@color/colorDarkText"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+        <com.mji.tapia.youcantapia.widget.PickerView
+            android:id="@+id/date_year_pv"
+            android:layout_width="150dp"
+            android:layout_height="300dp"
+            app:pv_textSize="26sp"
+            app:pv_color="@color/colorDarkText"
+            android:layout_centerVertical="true"/>
+        <com.mji.tapia.youcantapia.widget.CustomFontTextView
+            android:id="@+id/date_year"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/date_year_pv"
+            android:text="年"
+            android:layout_centerVertical="true"
+            android:textSize="40sp"
+            android:textColor="@color/colorDarkText"/>
+        <com.mji.tapia.youcantapia.widget.PickerView
+            android:id="@+id/date_month_pv"
+            android:layout_width="80dp"
+            android:layout_height="300dp"
+            android:layout_toEndOf="@id/date_year"
+            app:pv_textSize="26sp"
+            app:pv_color="@color/colorDarkText"
+            android:layout_centerVertical="true"/>
+        <com.mji.tapia.youcantapia.widget.CustomFontTextView
+            android:id="@+id/date_month"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/date_month_pv"
+            android:text="月"
+            android:layout_centerVertical="true"
+            android:textSize="40sp"
+            android:textColor="@color/colorDarkText"/>
+        <com.mji.tapia.youcantapia.widget.PickerView
+            android:id="@+id/date_day_pv"
+            android:layout_width="80dp"
+            android:layout_height="300dp"
+            android:layout_toEndOf="@id/date_month"
+            app:pv_textSize="26sp"
+            app:pv_color="@color/colorDarkText"
+            android:layout_centerVertical="true"/>
+        <com.mji.tapia.youcantapia.widget.CustomFontTextView
+            android:id="@+id/date_day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/date_day_pv"
+            android:text="日"
+            android:layout_centerVertical="true"
+            android:textSize="40sp"
+            android:textColor="@color/colorDarkText"/>
+    </RelativeLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:clipToPadding="false"
+        android:padding="20dp"
+        android:layout_marginBottom="30dp"
+        android:orientation="horizontal">
+
+        <com.mji.tapia.youcantapia.widget.CustomFontTextView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shared_button_small_primary"
+            android:gravity="center"
+            android:paddingEnd="40dp"
+            android:elevation="5dp"
+            android:paddingStart="40dp"
+            android:text="@string/share_setting_back"
+            android:textColor="@color/colorLightText"
+            android:textSize="36sp" />
+
+        <com.mji.tapia.youcantapia.widget.CustomFontTextView
+            android:id="@+id/next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="60dp"
+            android:background="@drawable/shared_button_small_primary"
+            android:gravity="center"
+            android:elevation="5dp"
+            android:paddingEnd="40dp"
+            android:paddingStart="40dp"
+            android:text="@string/share_setting_confirm"
+            android:textColor="@color/colorLightText"
+            android:textSize="36sp" />
+    </LinearLayout>
+</RelativeLayout>

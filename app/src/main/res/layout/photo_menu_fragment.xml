@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/photoIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageView"
+        android:layout_marginStart="330dp"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:src="@drawable/photo" />
+
+    <com.mji.tapia.youcantapia.widget.CustomFontTextView
+        android:id="@+id/item_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageView"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/photoIcon"
+        android:text="@string/photo_menu_title"
+        android:textColor="@color/colorDarkText"
+        app:fontFamily="sans-serif"
+        android:textSize="64sp" />
+
+    <com.mji.tapia.youcantapia.widget.CustomFontTextView
+        android:id="@+id/camera"
+        android:layout_width="230dp"
+        android:layout_height="200dp"
+        android:layout_below="@id/item_text"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="185dp"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/shared_wide_card"
+        android:elevation="5dp"
+        android:gravity="center"
+        android:text="@string/photo_menu_camera_label"
+        android:textColor="@color/colorDarkText"
+        android:textSize="64sp"
+        android:theme="@style/WhiteCard"
+        app:fontFamily="sans-serif"
+        android:enabled="false"/>
+
+    <ImageView
+        android:id="@+id/warningIcon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="275dp"
+        android:layout_marginTop="160dp"
+        android:elevation="5dp"
+        android:src="@drawable/dialog_warning_icon"
+        android:translationZ="5dp"
+        android:adjustViewBounds="true"
+        android:visibility="gone" />
+
+    <com.mji.tapia.youcantapia.widget.CustomFontTextView
+        android:id="@+id/galary"
+        android:layout_width="230dp"
+        android:layout_height="200dp"
+        android:layout_below="@id/item_text"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="80dp"
+        android:layout_toEndOf="@id/camera"
+        android:background="@drawable/shared_wide_card"
+        android:elevation="5dp"
+        android:gravity="center"
+        android:text="@string/photo_menu_galary_label"
+        android:textColor="@color/colorDarkText"
+        android:textSize="64sp"
+        android:theme="@style/WhiteCard"
+        app:fontFamily="sans-serif"
+        android:enabled="false"/>
+
+</RelativeLayout>

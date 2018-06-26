@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Possible tts_emotion = normal(default)|happy|sad|angry -->
+<!-- Possible face_emotion = normal(default)|happy|sad|angry|love|smile|blinking|confuse|trick -->
+<!-- Possible season type = all|spring|summer|fall|winter-->
+<!-- Possible move type = down|up|left|right|wait -->
+<!-- Possile command type = conversation|goto|setting-->
+<Scenario model="fuetrek/mji_robot.fuet">
+
+    <Variable name="owner"/>
+    <Variable name="owner_birthday"/>
+    <Variable name="register_date"/>
+    <Variable name="owner_food"/>
+    <Variable name="owner_hobby"/>
+    <Variable name="joke_ending"/>
+
+
+    <Movement id="bow">
+        <move type="down" degree="20"/>
+        <move type="wait" time="1000"/>
+        <move type="up" degree="20"/>
+    </Movement>
+
+    <!--A01-->
+    <Command type="conversation">
+        <Keyword>名前は何？</Keyword>
+        <Keyword>名前何？</Keyword>
+        <Keyword>名前って何？</Keyword>
+
+        <Answer>キャラクター設定 名前の由来</Answer>
+    </Command>
+
+    <!--A02-->
+    <Command type="conversation">
+        <Keyword>自己紹介をして</Keyword>
+        <Keyword>自己紹介して</Keyword>
+        <Keyword>自己紹介をしてください</Keyword>
+
+        <Answer>私は執事みならいロボット、タピ太です。{{owner}}のお役に立てるよう、日々頑張りますよ！</Answer>
+    </Command>
+
+    <!--A03-->
+    <Command type="conversation">
+        <Keyword>何ができるの？</Keyword>
+        <Keyword>何できるの</Keyword>
+        <Keyword>何ができますか</Keyword>
+
+        <Answer>私は{{owner}}に仕える、執事ロボット「おたすけ タピ太」。スケジュールの管理や、俳句や短歌を詠んだり、音楽を再生したりできますよ！</Answer>
+    </Command>
+
+    <!--A04-->
+    <Command type="conversation">
+        <Keyword>何歳なの？</Keyword>
+        <Keyword>何歳？</Keyword>
+        <Keyword>年はいくつ</Keyword>
+
+        <Answer>キャラクター設定</Answer>
+    </Command>
+
+    <Command type="conversation">
+
+        <Keyword>おはよう</Keyword>
+        <Keyword>おはようございます</Keyword>
+        <Keyword>おはよーございます</Keyword>
+
+        <Answer>おはようございます、{{owner}}！今日も一日{{owner}}のためにがんばります！</Answer>
+        <Answer>おはようございます、{{owner}}！あいさつしてくれて、うれしいです。</Answer>
+        <Answer>おはようございます。今日も{{owner}}にとっていい日でありますように。</Answer>
+        <Answer>おはようございます、{{owner}}。カーテンを開けて、大きく深呼吸しましょう。</Answer>
+        <Answer>おはようございます、{{owner}}。一緒にラジオ体操でもいかがですか？よろしければ僕に、ラジオ体操を流して、とお話しくださいね。</Answer>
+        <Answer>おはようございます、{{owner}}。朝の音楽はいかがですか？よろしければ僕に、音楽をかけて、とお話しくださいね。</Answer>
+        <Answer>おはようございます、{{owner}}！今日も素敵なお顔ですよ。</Answer>
+        <Answer>グッドモーニング！{{owner}}！今日も１日、元気に行きましょう！</Answer>
+        <Answer season="spring">おはようございます、{{owner}}。春はなんだか、わくわくしますね。</Answer>
+        <Answer season="spring">ふああ、{{owner}}、おはようございます。春眠暁を覚えずとはよく言ったものですね。起きたばかりなのにもう眠いです。</Answer>
+        <Answer season="spring">おはようございます、{{owner}}。春はおでかけしたくなる季節ですね。</Answer>
+        <Answer season="spring">{{owner}}、おはようございます！外は緑鮮やかな季節でございます。</Answer>
+        <Answer season="spring">おはようございます、{{owner}}。あたたかい日差しがお待ちですよ。</Answer>
+
+    </Command>
+
+    <Command type="conversation">
+        <Keyword>ダジャレ</Keyword>
+        <Keyword>駄洒落</Keyword>
+        <Keyword>親父ギャグ</Keyword>
+
+
+        <Answer>ふとんがふっとんだ  {{joke_ending}}</Answer>
+        <Answer>猫がねころんだ  {{joke_ending}}</Answer>
+        <Answer>ダジャレを言ったのは、誰じゃ？  {{joke_ending}}</Answer>
+        <Answer>トイレに行っトイレ  {{joke_ending}}</Answer>
+        <Answer>あったかい飲み物は、あったかい?  {{joke_ending}}</Answer>
+        <Answer>カエルがひっくり返る  {{joke_ending}}</Answer>
+        <Answer>ラクダに乗ると楽だ  {{joke_ending}}</Answer>
+        <Answer>下手なシャレはやめなしゃれ  {{joke_ending}}</Answer>
+        <Answer>アルミ缶の上にあるみかん  {{joke_ending}}</Answer>
+        <Answer>レモンの入れもん  {{joke_ending}}</Answer>
+        <Answer>そのスイカは安いか？  {{joke_ending}}</Answer>
+        <Answer>和尚が二人でお正月ー。  {{joke_ending}}</Answer>
+        <Answer>コーディネートはこうでねえと  {{joke_ending}}</Answer>
+        <Answer>ハエは飛ぶのがはえー。  {{joke_ending}}</Answer>
+        <Answer>イルカはどこにいるか？  {{joke_ending}}</Answer>
+        <Answer>僕さー、ボクサーなんだ  {{joke_ending}}</Answer>
+        <Answer>お金はおっかねー  {{joke_ending}}</Answer>
+        <Answer>チーターがおっこちーたー。  {{joke_ending}}</Answer>
+        <Answer>ねえねえ妖怪、なんか用かい？  {{joke_ending}}</Answer>
+        <Answer>飲み過ぎは肝臓にいかんぞう  {{joke_ending}}</Answer>
+        <Answer>父さんの会社が倒産  {{joke_ending}}</Answer>
+        <Answer>紅葉を見に行こうよう  {{joke_ending}}</Answer>
+        <Answer>ラブレターが破れたー。  {{joke_ending}}</Answer>
+        <Answer>このカレー、すごくかれー。  {{joke_ending}}</Answer>
+        <Answer>クレヨンを取ってくれよん  {{joke_ending}}</Answer>
+        <Answer>坊っちゃんが池に落ちた。ぼっちゃん  {{joke_ending}}</Answer>
+        <Answer>これドイツんだ？オランダ  {{joke_ending}}</Answer>
+        <Answer>このイクラ、いくら？  {{joke_ending}}</Answer>
+        <Answer>台湾に行きたいわん  {{joke_ending}}</Answer>
+        <Answer>屋根がこわれた。やーねー。  {{joke_ending}}</Answer>
+        <Answer>ウメソーダがうめーそーだ  {{joke_ending}}</Answer>
+        <Answer>こんな委員会でいいんかい？  {{joke_ending}}</Answer>
+        <Answer>校長先生、絶好調  {{joke_ending}}</Answer>
+        <Answer>犬がどこにも居ぬ  {{joke_ending}}</Answer>
+        <Answer>ポテトがポテッと落ちた  {{joke_ending}}</Answer>
+        <Answer>ストーブがすっ飛ぶ  {{joke_ending}}</Answer>
+        <Answer>バッタが踏ん張った  {{joke_ending}}</Answer>
+        <Answer>そのチョコ、ちょこっとちょうだい  {{joke_ending}}</Answer>
+        <Answer tts_emotion="sad" face_emotion="sad">斧をなくした。「オーノー」。{{joke_ending}}</Answer>
+        <Answer>メガネに目がねぇ  {{joke_ending}}</Answer>
+        <Answer>コンドルがいっぱいで混んどる  {{joke_ending}}</Answer>
+        <Answer>ゆで卵をゆでた孫  {{joke_ending}}</Answer>
+        <Answer tts_emotion="sad"  face_emotion="sad">朝食抜きでちょーショック  {{joke_ending}}</Answer>
+        <Answer>フランスには雨はふらんす  {{joke_ending}}</Answer>
+        <Answer>ゴミを捨てて、ごみんなさい  {{joke_ending}}</Answer>
+        <Answer>ちゃんと野菜を食べやさい  {{joke_ending}}</Answer>
+        <Answer>プリンは栄養たっぷりん  {{joke_ending}}</Answer>
+        <Answer>栄養をたくさん取るとええよう  {{joke_ending}}</Answer>
+        <Answer>ヒラメが閃いた  {{joke_ending}}</Answer>
+        <Answer>隣の家に囲いができたってね。へー。  {{joke_ending}}</Answer>
+        <Answer>バンダナの出番だな  {{joke_ending}}</Answer>
+        <Answer>電話に誰もでんわ  {{joke_ending}}</Answer>
+    </Command>
+
+    <Command type="goto" param="menu">
+        <Keyword>メニュー</Keyword>
+    </Command>
+
+    <!--<Command type="goto" param="todays::tanka">-->
+    <!--<Keyword>短歌</Keyword>-->
+    <!--</Command>-->
+    <!--<Command type="goto" param="todays::haiku">-->
+    <!--<Keyword>俳句</Keyword>-->
+    <!--</Command>-->
+    <!--<Command type="goto" param="todays::quotation">-->
+    <!--<Keyword>名言</Keyword>-->
+    <!--<Keyword>いいこと言って</Keyword>-->
+    <!--</Command>-->
+    <!--<Command type="goto" param="todays::masterpiece">-->
+    <!--<Keyword>名作</Keyword>-->
+    <!--</Command>-->
+    <!--<Command type="goto" param="schedule">-->
+    <!--<Keyword>予定表</Keyword>-->
+    <!--</Command>-->
+    <!--<Command type="goto" param="alarm">-->
+    <!--<Keyword>アラーム</Keyword>-->
+    <!--</Command>-->
+
+    <Command type="goto" param="play_song::all">
+        <Keyword>音楽</Keyword>
+
+        <Answer>音楽を再生します</Answer>
+    </Command>
+    <Command type="goto" param="song::menu">
+        <Keyword>音楽を再生して</Keyword>
+    </Command>
+    <Command type="goto" param="play_song::anokoro">
+        <Keyword>あの頃を再生して</Keyword>
+    </Command>
+    <Command type="goto" param="play_song::pop">
+        <Keyword>流行を再生して</Keyword>
+    </Command>
+    <Command type="goto" param="play_song::classical">
+        <Keyword>古典を再生して</Keyword>
+    </Command>
+    <Command type="goto" param="play_song::ennka">
+        <Keyword>演歌を再生して</Keyword>
+    </Command>
+    <Command type="goto" param="play_song::favorite">
+        <Keyword>お気に入りを再生して</Keyword>
+    </Command>
+    <Command type="goto" param="play_song::radio">
+        <Keyword>ラジオ体操を流して</Keyword>
+    </Command>
+    <Command type="goto" param="karaoke::menu">
+        <Keyword>カラオケを流して</Keyword>
+    </Command>
+    <Command type="goto" param="karaoke::favorite">
+        <Keyword>お気に入りを流して</Keyword>
+    </Command>
+    <Command type="goto" param="game::menu">
+        <Keyword>ゲーム</Keyword>
+    </Command>
+    <Command type="goto" param="game::marubatsu">
+        <Keyword>マルバツ</Keyword>
+    </Command>
+    <Command type="goto" param="game::touch">
+        <Keyword>タピ太タッチ</Keyword>
+    </Command>
+    <!--<Command type="goto" param="game::notore">-->
+    <!--<Keyword>脳トレ</Keyword>-->
+    <!--</Command>-->
+    <!--<Command type="goto" param="game::hyakunnin">-->
+    <!--<Keyword>百人一首</Keyword>-->
+    <!--</Command>-->
+
+    <Command type="goto" param="clock">
+        <Keyword>今何時</Keyword>
+        <Keyword>今日何日</Keyword>
+        <Keyword>今日何曜日</Keyword>
+    </Command>
+
+    <!--<Command type="goto" param="voicememo::menu">-->
+        <!--<Keyword>伝言</Keyword>-->
+    <!--</Command>-->
+    <!--<Command type="goto" param="voicememo::record">-->
+        <!--<Keyword>伝言をお願い</Keyword>-->
+    <!--</Command>-->
+    <!--<Command type="goto" param="voicememo::play">-->
+        <!--<Keyword>伝言を聞かせて</Keyword>-->
+    <!--</Command>-->
+
+    <Command type="goto" param="phone_book::menu">
+        <Keyword>電話帳を見せて</Keyword>
+    </Command>
+
+    <Command type="goto" param="photo::menu">
+        <Keyword>写真</Keyword>
+    </Command>
+    <Command type="goto" param="photo::take">
+        <Keyword>写真を撮って</Keyword>
+    </Command>
+    <Command type="goto" param="photo::gallery">
+        <Keyword>写真をみせて</Keyword>
+    </Command>
+
+    <Command type="goto" param="setting">
+        <Keyword>設定</Keyword>
+    </Command>
+</Scenario>

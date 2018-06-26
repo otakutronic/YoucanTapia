@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginStart="100dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/volume_icon" />
+
+        <com.mji.tapia.youcantapia.widget.CustomFontTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:text="@string/volume_title"
+            android:textColor="@color/colorDarkText"
+            android:textSize="70sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="170dp"
+
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="220dp"
+        android:clipToPadding="false"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <com.mji.tapia.youcantapia.widget.CustomFontTextView
+            android:id="@+id/minus"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/shared_wide_card"
+            android:elevation="5dp"
+            android:gravity="center"
+            android:text="ー"
+            android:textColor="@color/colorDarkText"
+            android:textSize="80sp" />
+
+        <com.mji.tapia.youcantapia.widget.CustomFontTextView
+            android:id="@+id/value"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:background="@drawable/shared_wide_card"
+            android:elevation="5dp"
+            android:gravity="center"
+            android:text="10"
+            android:textColor="@color/colorDarkText"
+            android:textSize="80sp" />
+
+        <com.mji.tapia.youcantapia.widget.CustomFontTextView
+            android:id="@+id/plus"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/shared_wide_card"
+            android:elevation="5dp"
+            android:gravity="center"
+            android:text="+"
+            android:textColor="@color/colorDarkText"
+            android:textSize="100sp" />
+    </LinearLayout>
+
+</RelativeLayout>

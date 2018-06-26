@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="conveninent_menu_voice_message_label">音声メモ</string>
+    <string name="conveninent_menu_photo_label">写真</string>
+    <string name="conveninent_menu_phone_book_label">電話帳</string>
+    <string name="conveninent_menu_clock_label">時計</string>
+
+    <string name="convenient_clock_speech">今日は%s年%s月%s日、%s%s時%s分です。</string>
+
+    <string name="phonebook_contact_name_label">名前</string>
+    <string name="phonebook_contact_number_label">電話番号</string>
+    <string name="phonebook_contact_name_input"> </string>
+    <string name="phonebook_contact_name_input_hint">タッチして入力</string>
+    <string name="phonebook_contact_add_label">連絡先を追加</string>
+    <string name="phonebook_contact_add_button_text">確定</string>
+    <string name="phonebook_contact_number_input"> </string>
+    <string name="phonebook_contact_number_input_hint">タッチして入力</string>
+
+    <string name="phonebook_contact_delete_text_confirm">削除しますか？</string>
+    <string name="phonebook_contact_delete_button_text_confirm">はい</string>
+    <string name="phonebook_contact_delete_button_text_cancel">いいえ</string>
+
+    <string name="phonebook_contact_keypad_hint">連絡先を入力</string>
+    <string name="phonebook_contact_numpad_hint">電話番号を入力</string>
+
+</resources>

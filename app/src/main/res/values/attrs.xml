@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ProgressTextViewAttrs">
+        <attr name="orientation" format="enum" >
+            <enum name="vertical" value="0"/>
+            <enum name="horizontal" value="1"/>
+        </attr>
+        <attr name="text" format="string" localization="suggested" />
+        <attr name="baseColor" format="color" />
+        <attr name="fillColor" format="color" />
+        <attr name="fontAssetPath" format="string" />
+        <attr name="textSize" format="dimension" />
+        <attr name="fade" format="dimension" />
+        <attr name="vertical_lineSpace" format="dimension" />
+        <attr name="vertical_characterSpace" format="dimension" />
+        <attr name="progress" format="float" />
+        <attr name="horizontal_lineSpace" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="InternationalTextViewAttrs">
+        <attr name="language" format="enum" >
+            <enum name="en" value="0"/>
+            <enum name="jp" value="1"/>
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="CustomFontTextViewAttrs">
+        <attr name="custom_font" format="string"/>
+    </declare-styleable>
+
+    <declare-styleable name="KeyboardViewAttrs">
+        <attr name="kb_font" format="string"/>
+        <attr name="kb_text" format="string"/>
+        <attr name="kb_hint" format="string"/>
+        <attr name="kb_back_txt" format="string"/>
+        <attr name="kb_enter_txt" format="string"/>
+        <attr name="kb_buttonColor" format="color"/>
+        <attr name="kb_buttonTextColor" format="color"/>
+        <attr name="kb_inputTextColor" format="color"/>
+        <attr name="kb_hintTextColor" format="color"/>
+        <attr name="kb_inputSize" format="dimension"/>
+        <attr name="kb_buttonTextSize" format="dimension"/>
+        <attr name="kb_buttonPressedTextSize" format="dimension"/>
+    </declare-styleable>
+
+    <declare-styleable name="PickerView">
+        <attr name="pv_space" format="dimension|reference" />
+        <attr name="pv_color" format="color|reference" />
+        <attr name="pv_textSize" format="dimension|reference" />
+        <attr name="pv_alpha" format="integer" />
+        <attr name="pv_font" format="string"/>
+        <attr name="pv_entries" format="reference"/>
+    </declare-styleable>
+</resources>

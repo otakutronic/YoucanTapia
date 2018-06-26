@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/play_anim"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_marginStart="325dp"
+        android:layout_marginTop="80dp"
+        android:visibility="visible"
+        />
+    <LinearLayout
+        android:id="@+id/head"
+        android:layout_width="wrap_content"
+        android:layout_height="120dp"
+        android:layout_marginBottom="40dp"
+        android:clipToPadding="false"
+        android:padding="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <com.mji.tapia.youcantapia.widget.CustomFontTextView
+            android:id="@+id/item_text"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/music_volume_change"
+            android:textColor="@color/colorDarkText"
+            android:layout_marginEnd="10dp"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <com.mji.tapia.youcantapia.widget.CustomFontTextView
+            android:id="@+id/minus_bt"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="ー"
+            android:elevation="5dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/shared_card"
+            android:textColor="@color/colorDarkText"
+            android:textSize="36sp" />
+        <com.mji.tapia.youcantapia.widget.CustomFontTextView
+            android:id="@+id/volume"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_marginEnd="10dp"
+            android:text="10"
+            android:elevation="5dp"
+            android:background="@drawable/shared_card"
+            android:textColor="@color/colorDarkText"
+            android:textSize="36sp"/>
+        <com.mji.tapia.youcantapia.widget.CustomFontTextView
+            android:id="@+id/plus_bt"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/shared_card"
+            android:elevation="5dp"
+            android:gravity="center"
+            android:text="+"
+            android:textColor="@color/colorDarkText"
+            android:textSize="36sp" />
+        <com.mji.tapia.youcantapia.widget.CustomFontTextView
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/music_player_repeat"
+            android:textColor="@color/colorDarkText"
+            android:layout_marginEnd="10dp"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+        <com.mji.tapia.youcantapia.widget.CustomFontTextView
+            android:id="@+id/repeat_on"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_marginEnd="10dp"
+            android:text="@string/music_player_on"
+            android:elevation="5dp"
+            android:background="@drawable/shared_card"
+            android:textColor="@color/colorDarkText"
+            android:textSize="36sp"/>
+        <com.mji.tapia.youcantapia.widget.CustomFontTextView
+            android:id="@+id/repeat_off"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/shared_card"
+            android:elevation="5dp"
+            android:gravity="center"
+            android:text="@string/music_player_off"
+            android:textColor="@color/colorDarkText"
+            android:textSize="36sp" />
+    </LinearLayout>
+
+</RelativeLayout>

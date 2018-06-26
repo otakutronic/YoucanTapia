@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Photo-->
+    <string name="photo_menu_title">写真</string>
+    <string name="photo_menu_galary_label">見る</string>
+    <string name="photo_menu_camera_label">撮る</string>
+
+    <string name="camera_finish_label">終了</string>
+    <string name="camera_retake_label">もう一枚</string>
+
+    <string name="photo_delete_dialog_msg">削除しますか？\n削除した写真は元に戻すことができません。</string>
+    <string name="photo_delete_dialog_no">いいえ</string>
+    <string name="photo_delete_dialog_yes">はい</string>
+
+    <string name="photo_warning_dialog_msg">保存できる枚数を超えました。\n保存した写真を削除してください。</string>
+    <string name="photo_warning_dialog_no">ー覧へ</string>
+    <string name="photo_slide_show_playback">再生</string>
+    <string name="photo_slide_show_pause">一時停止</string>
+
+    <string name="photo_menu_tts">写真を撮りますか？または、ご覧になりますか？</string>
+    <string name="photo_number_of_photo_check_tts">保存できる枚数を超えました。保存した写真を削除してください。</string>
+    <string name="photo_shooting_screen_tts">僕を見てください。写真を撮りますよ。3,2,1、はいチーズ</string>
+    <string name="photo_shooting_end_screen_tts">もう一枚撮りますか？</string>
+    <string name="photo_list_delete_button_tts">削除する写真を選択してください。</string>
+    <string name="photo_delete_popup_tts">削除しますか？削除した写真は元に戻すことができません。</string>
+    <string name="photo_delete_popup_yes_tts">写真を削除しました。</string>
+    <string name="photo_delete_popup_no_tts">削除を中断しました。</string>
+    <string name="photo_list_tts">見たい写真を選択してください</string>
+    <string name="photo_shooting_start_screen_tts">3,2,1、はいチーズ</string>
+</resources>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

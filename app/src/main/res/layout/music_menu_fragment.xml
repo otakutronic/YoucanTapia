@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.mji.tapia.youcantapia.widget.CustomFontTextView
+        android:id="@+id/item_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:custom_font="fonts/mplus-2p-black.ttf"
+        android:layout_below="@id/imageView"
+        android:text="@string/music_menu_title"
+        android:textSize="64sp"
+        android:layout_marginStart="220dp"
+        android:gravity="center"
+        android:textColor="@color/colorDarkText"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+        <RelativeLayout
+            android:id="@+id/karaoke"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:addStatesFromChildren="true"
+            android:clipToPadding="false"
+            android:layout_marginEnd="20dp"
+            android:elevation="5dp">
+            <com.mji.tapia.youcantapia.widget.CustomFontTextView
+                android:layout_width="330dp"
+                android:layout_height="160dp"
+                android:layout_marginTop="50dp"
+                android:theme="@style/BlueCard"
+                android:background="@drawable/shared_wide_card"
+                android:gravity="center"
+                android:elevation="5dp"
+                android:paddingTop="20dp"
+                android:textStyle="bold"
+                android:text="@string/music_menu_karaoke_label"
+                android:textColor="@color/colorDarkText"
+                android:textSize="50sp" />
+
+            <ImageView
+                android:id="@+id/karaoke_icon"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/music_karaoke_icon"
+                android:background="@drawable/music_menu_icon_holder"
+                android:elevation="5dp"
+                android:paddingEnd="10dp"
+                android:paddingStart="10dp"
+                android:paddingTop="20dp"
+                android:paddingBottom="0dp"
+                android:layout_centerHorizontal="true"
+                />
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/song"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:elevation="5dp"
+            android:addStatesFromChildren="true"
+            android:clipToPadding="false"
+            android:padding="5dp">
+            <com.mji.tapia.youcantapia.widget.CustomFontTextView
+                android:layout_width="330dp"
+                android:layout_height="160dp"
+                android:layout_marginTop="50dp"
+                android:theme="@style/BlueCard"
+                android:background="@drawable/shared_wide_card"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:paddingTop="20dp"
+                android:elevation="5dp"
+                android:text="@string/music_menu_song_label"
+                android:textColor="@color/colorDarkText"
+                android:textSize="50sp" />
+
+            <ImageView
+                android:id="@+id/music_icon"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/music_song_icon"
+                android:background="@drawable/music_menu_icon_holder"
+                android:elevation="5dp"
+                android:paddingEnd="10dp"
+                android:paddingStart="0dp"
+                android:paddingTop="20dp"
+                android:paddingBottom="0dp"
+                android:layout_centerHorizontal="true" />
+
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

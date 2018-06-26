@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.mji.tapia.youcantapia.widget.CustomFontTextView
+        android:id="@+id/item_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageView"
+        android:layout_marginStart="220dp"
+        android:gravity="center"
+        android:text="@string/today_menu_title"
+        android:textColor="@color/colorDarkText"
+        android:textSize="64sp"
+        app:custom_font="fonts/mplus-2p-black.ttf" />
+
+    <com.mji.tapia.youcantapia.widget.CustomFontTextView
+        android:id="@+id/first_button"
+        android:layout_width="280dp"
+        android:layout_height="160dp"
+        android:layout_alignStart="@id/item_text"
+        android:layout_below="@id/item_text"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"
+        android:theme="@style/WhiteCard"
+        android:background="@drawable/shared_box"
+        android:elevation="5dp"
+        android:gravity="center"
+        android:text="@string/today_menu_first_label"
+        android:textColor="@color/colorDarkText"
+        android:textSize="50sp"
+        app:custom_font="fonts/mplus-2p-black.ttf" />
+
+    <com.mji.tapia.youcantapia.widget.CustomFontTextView
+        android:id="@+id/second_button"
+        android:layout_width="280dp"
+        android:layout_height="160dp"
+        android:layout_alignTop="@id/first_button"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@id/first_button"
+        android:theme="@style/WhiteCard"
+        android:background="@drawable/shared_box"
+        android:elevation="5dp"
+        android:gravity="center"
+        android:text="@string/today_menu_second_label"
+        android:textColor="@color/colorDarkText"
+        android:textSize="50sp"
+        app:custom_font="fonts/mplus-2p-black.ttf" />
+
+    <com.mji.tapia.youcantapia.widget.CustomFontTextView
+        android:id="@+id/third_button"
+        android:layout_width="280dp"
+        android:layout_height="160dp"
+        android:layout_alignStart="@id/first_button"
+        android:layout_below="@id/first_button"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"
+        android:theme="@style/WhiteCard"
+        android:background="@drawable/shared_box"
+        android:elevation="5dp"
+        android:gravity="center"
+        android:text="@string/today_menu_third_label"
+        android:textColor="@color/colorDarkText"
+        android:textSize="50sp"
+        app:custom_font="fonts/mplus-2p-black.ttf" />
+
+    <com.mji.tapia.youcantapia.widget.CustomFontTextView
+        android:id="@+id/fourth_button"
+        android:layout_width="280dp"
+        android:layout_height="160dp"
+        android:layout_below="@+id/second_button"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@+id/third_button"
+        android:theme="@style/WhiteCard"
+        android:background="@drawable/shared_box"
+        android:elevation="5dp"
+        android:gravity="center"
+        android:text="@string/today_menu_fourth_label"
+        android:textColor="@color/colorDarkText"
+        android:textSize="50sp"
+        app:custom_font="fonts/mplus-2p-black.ttf" />
+
+</RelativeLayout>

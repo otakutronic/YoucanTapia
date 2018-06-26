@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+    <ImageView
+        android:id="@+id/itemId"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@color/white" />
+
+    <Button
+        android:id="@+id/stopBtn"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:layout_gravity="bottom|center"
+        android:layout_marginBottom="50dp"
+        android:layout_marginLeft="50dp"
+        android:background="@drawable/white_button"
+        android:text="@string/photo_slide_show_pause"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:visibility="visible" />
+
+    <Button
+        android:id="@+id/returnBtn"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:layout_gravity="bottom|center"
+        android:layout_marginBottom="50dp"
+        android:layout_marginStart="200dp"
+        android:background="@drawable/yellow_button"
+        android:text="戻る"
+        android:textSize="20sp"
+        android:visibility="visible" />
+
+</FrameLayout>

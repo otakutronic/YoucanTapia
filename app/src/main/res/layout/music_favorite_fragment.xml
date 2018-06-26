@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/head"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="220dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:elevation="5dp"
+            android:paddingBottom="0dp"
+            android:scaleType="centerInside"
+
+            android:src="@drawable/music_favorite_icon" />
+
+        <com.mji.tapia.youcantapia.widget.CustomFontTextView
+            android:id="@+id/item_text"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/music_favorite_title"
+            android:textColor="@color/colorDarkText"
+            android:textSize="64sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+    <ListView
+        android:id="@+id/item_list"
+        android:layout_width="550dp"
+        android:layout_height="330dp"
+        android:layout_marginStart="200dp"
+        android:layout_marginTop="20dp"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:layout_gravity="center"
+        android:divider="@color/lt_gray"
+        android:dividerHeight="1dp"
+        android:elevation="5dp"
+        android:background="@drawable/shared_wide_card_normal"
+        android:fadingEdge="vertical"
+        android:overScrollMode="never"
+        android:requiresFadingEdge="vertical"
+        android:theme="@style/sub_menu_ripple"
+        tools:listitem="@layout/music_item"
+        android:layout_below="@id/head">
+
+    </ListView>
+
+</RelativeLayout>

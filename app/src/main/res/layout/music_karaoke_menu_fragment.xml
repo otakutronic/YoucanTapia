@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="220dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:elevation="5dp"
+            android:paddingBottom="0dp"
+            android:paddingEnd="10dp"
+            android:paddingTop="20dp"
+            android:src="@drawable/music_karaoke_icon" />
+
+        <com.mji.tapia.youcantapia.widget.CustomFontTextView
+            android:id="@+id/item_text"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/music_karaoke_menu_title"
+            android:textColor="@color/colorDarkText"
+            android:textSize="64sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="false"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="110dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="170dp"
+            android:orientation="horizontal"
+            android:clipToPadding="false"
+            android:clipChildren="false"
+            android:paddingTop="10dp">
+
+            <com.mji.tapia.youcantapia.widget.CustomFontTextView
+                android:id="@+id/category_1"
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/shared_wide_card"
+                android:elevation="5dp"
+                android:gravity="center"
+                android:text="@string/music_karaoke_menu_category_1_label"
+                android:textColor="@color/colorDarkText"
+                android:textSize="50sp"
+                android:textStyle="bold" />
+
+            <com.mji.tapia.youcantapia.widget.CustomFontTextView
+                android:id="@+id/category_2"
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/shared_wide_card"
+                android:elevation="5dp"
+                android:gravity="center"
+                android:text="@string/music_karaoke_menu_category_2_label"
+                android:textColor="@color/colorDarkText"
+                android:textSize="50sp"
+                android:textStyle="bold" />
+
+            <com.mji.tapia.youcantapia.widget.CustomFontTextView
+                android:id="@+id/category_3"
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/shared_wide_card"
+                android:elevation="5dp"
+                android:gravity="center"
+                android:text="@string/music_karaoke_menu_category_3_label"
+                android:textColor="@color/colorDarkText"
+                android:textSize="50sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="170dp"
+            android:orientation="horizontal"
+            android:paddingBottom="10dp">
+
+            <com.mji.tapia.youcantapia.widget.CustomFontTextView
+                android:id="@+id/category_4"
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+
+                android:background="@drawable/shared_wide_card"
+                android:elevation="5dp"
+                android:gravity="center"
+                android:text="@string/music_karaoke_menu_category_4_label"
+                android:textColor="@color/colorDarkText"
+                android:textSize="50sp"
+                android:textStyle="bold" />
+
+            <com.mji.tapia.youcantapia.widget.CustomFontTextView
+                android:id="@+id/category_5"
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/shared_wide_card"
+                android:elevation="5dp"
+                android:gravity="center"
+                android:text="@string/music_karaoke_menu_category_5_label"
+                android:textColor="@color/colorDarkText"
+                android:textSize="50sp"
+                android:textStyle="bold" />
+
+            <com.mji.tapia.youcantapia.widget.CustomFontTextView
+                android:id="@+id/category_6"
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/shared_wide_card"
+                android:elevation="5dp"
+                android:gravity="center"
+                android:text="@string/music_karaoke_menu_category_6_label"
+                android:textColor="@color/colorDarkText"
+                android:textSize="50sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

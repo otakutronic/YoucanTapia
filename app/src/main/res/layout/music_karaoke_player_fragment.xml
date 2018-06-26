@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextureView
+        android:id="@+id/video_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+
+    <RelativeLayout
+        android:id="@+id/white_layer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible"
+        android:background="@color/white_alpha">
+
+        <ImageView
+            android:id="@+id/play_icon"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:visibility="invisible"
+            android:layout_centerInParent="true"
+            android:src="@drawable/music_karaoke_play_icon"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/head"
+        android:layout_width="wrap_content"
+        android:layout_height="120dp"
+        android:layout_marginStart="380dp"
+        android:layout_marginTop="40dp"
+        android:clipToPadding="false"
+        android:clickable="true"
+        android:padding="20dp"
+        android:orientation="horizontal">
+
+        <com.mji.tapia.youcantapia.widget.CustomFontTextView
+            android:id="@+id/item_text"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/music_volume_change"
+            android:textColor="@color/colorLightText"
+            android:shadowColor="@color/colorDarkText"
+            android:layout_marginEnd="10dp"
+            android:shadowRadius="3"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <com.mji.tapia.youcantapia.widget.CustomFontTextView
+            android:id="@+id/minus_bt"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="ー"
+            android:elevation="5dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/shared_card"
+            android:textColor="@color/colorDarkText"
+            android:textSize="36sp" />
+        <com.mji.tapia.youcantapia.widget.CustomFontTextView
+            android:id="@+id/volume"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_marginEnd="10dp"
+            android:text="10"
+            android:duplicateParentState="false"
+            android:elevation="5dp"
+            android:background="@drawable/shared_card_normal"
+            android:textColor="@color/colorDarkText"
+            android:textSize="36sp"/>
+        <com.mji.tapia.youcantapia.widget.CustomFontTextView
+            android:id="@+id/plus_bt"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/shared_card"
+            android:elevation="5dp"
+            android:gravity="center"
+            android:text="+"
+            android:textColor="@color/colorDarkText"
+            android:textSize="36sp" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

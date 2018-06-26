@@ -1,0 +1,37 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:windowFullscreen">true</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowAnimationStyle">@null</item>
+    </style>
+    
+    <style name="sub_menu_ripple" parent="AppTheme" >
+        <item name="colorControlHighlight">@color/colorPrimary</item>
+    </style>
+
+    <style name="GreenCard" parent="AppTheme">
+        <item name="android:color">@color/colorAccent</item>
+    </style>
+
+    <style name="RedCard" parent="AppTheme">
+        <item name="android:color">@color/red</item>
+    </style>
+
+    <style name="YellowCard" parent="AppTheme">
+        <item name="android:color">@color/yellow</item>
+    </style>
+
+    <style name="BlueCard" parent="AppTheme">
+        <item name="android:color">@color/blue</item>
+    </style>
+
+    <style name="WhiteCard" parent="AppTheme">
+        <item name="android:color">@color/white</item>
+    </style>
+
+</resources>
